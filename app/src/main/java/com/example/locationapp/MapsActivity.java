@@ -30,7 +30,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LocationListener {
     private GoogleMap mMap;
     private GoogleApiClient googleApiClient;
-    private LocationRequest locationRequest
+    private LocationRequest locationRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +78,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             @Override
             public void onConnected(@Nullable Bundle bundle) {
-
+            locationRequest=new LocationRequest();
             }
 
             @Override
